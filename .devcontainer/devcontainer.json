@@ -1,0 +1,39 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "postCreateCommand": "pnpm install",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.linkedEditing": true,
+        "editor.defaultFormatter": "biomejs.biome",
+        "files.associations": {
+          "*.css": "tailwindcss"
+        },
+        "editor.quickSuggestions": {
+          "strings": "on"
+        },
+        "emmet.showExpandedAbbreviation": "never",
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "cursor.general.enableShadowWorkspace": true,
+        "tailwindCSS.experimental.classRegex": [
+          ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+          ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+        ]
+      },
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "yoavbls.pretty-ts-errors",
+        "vscode-icons-team.vscode-icons",
+        "mylesmurphy.prettify-ts",
+        "biomejs.biome",
+        "redhat.vscode-yaml",
+        "zenclabs.previewjs",
+        "formulahendry.auto-rename-tag"
+      ]
+    }
+  }
+}
