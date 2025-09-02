@@ -32,7 +32,8 @@
         "biomejs.biome",
         "redhat.vscode-yaml",
         "zenclabs.previewjs",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        "openai.chatgpt"
       ]
     }
   }
